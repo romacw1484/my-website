@@ -1,0 +1,44 @@
+header {
+    background-color: rgb(110, 110, 183);
+    font-family: American Typewriter, serif;
+    display: flex;
+    justify-content: center; /* Aligns children (like .header-logo) horizontally center */
+    align-items: center; /* Aligns children vertically center */
+    padding: 20px 0; /* Add some padding for aesthetic spacing */
+}
+
+.header-logo {
+    font-size: xxx-large;
+    /* Removed padding and display block, as it's unnecessary with flexbox centering */
+    text-align: center;
+}
+
+.project-container {
+    background-color: #fff; /* Light background for the project box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for depth */
+    margin-bottom: 20px; /* Space between project boxes */
+    padding: 15px; /* Padding inside the boxes */
+    display: flex;
+    justify-content: space-between; /* Space out the description and the embed */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.project-description, .project-embed {
+    width: 98%; /* Split the container space */
+}
+
+.project-description h3 {
+    margin-top: 0;
+}
+
+/* Ensure the body's background and main layout supports this structure */
+body {
+    background-color: rgb(165, 228, 228);
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Add a default font for consistency */
+}
+
+main {
+    display: block; /* Change from flex to block to stack project containers */
+    padding: 20px; /* Add some padding around the main content */
+}
