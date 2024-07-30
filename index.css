@@ -3,21 +3,21 @@ body {
     margin: 0;
     padding: 0;
     color: #070606;
-  }
-  .header {
+}
+.header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: #37619c;
     color: rgb(255, 255, 255);
     font-size: xx-large;
-  }
-  .header-logo,
-  .header-links a {
+}
+.header-logo,
+.header-links a {
     text-decoration: none;
     font-family: American Typewriter, serif;
-  }
-  .main-title {
+}
+.main-title {
     text-align: center;
     padding: 300px 20px;
     padding-top: 1px;
@@ -25,13 +25,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .subtext {
+}
+.subtext {
     font-size: 18px;
     font-family: Franklin Gothic Medium;
     margin-top: -10px;
-  }
-  .placeholder-image {
+}
+.placeholder-image {
     background-color: #ddd;
     height: 500px;
     text-align: center;
@@ -39,38 +39,37 @@ body {
     display: flex;
     border: 6px solid #000000;
     margin-bottom: -250px;
-  }
-  .info-section {
+}
+.info-section {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px;
-  }
-  .info-box {
+}
+.info-box {
     border: 2px solid #ddd;
     padding: 20px;
     flex-basis: calc(33% - 40px);
     text-align: center;
-  }
-  .quote {
+}
+.quote {
     background-color: #f0f0f0;
     padding: 50px 20px;
     text-align: center;
     font-style: italic;
-  }
-  .call-to-action {
+}
+.call-to-action {
     background-color: #0044cc;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  .call-to-action a {
+}
+.call-to-action a {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
     background-color: #0066ff;
     border-radius: 5px;
-  }
-
+}
 
 .button {
     align-items: center;
@@ -112,16 +111,23 @@ body {
 .button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
-  }
+}
 
-#bigger {
+#foodwebsite {
     padding-left: 200px;
     padding-right: 200px;
     height: 100px;
-    background-color:  rgb(247, 87, 87);
-  }
+    background-color: rgb(247, 87, 87);
+}
 
-  .quote {
+#retro-chat-button {
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 100px;
+    background-color: #feffab;
+}
+
+.quote {
     padding: 18px;
-    margin-top: 10px
-  }
+    margin-top: 10px;
+}
