@@ -114,11 +114,18 @@ body {
     transform: translateY(2px);
   }
 
-  #bigger {
+  #foodsite {
     padding-left: 200px;
     padding-right: 200px;
     height: 100px;
     background-color:  rgb(247, 87, 87);
+  }
+
+  #retro-chat-app {
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 100px;
+    background-color: #feffab;
   }
 
   .quote {
