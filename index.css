@@ -1,133 +1,109 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #070606;
+    color: #333;
+    background-color: #f5f7fa;
+    line-height: 1.6;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    background-color: #37619c;
-    color: rgb(255, 255, 255);
-    font-size: xx-large;
+    background-color: #3A506B;
+    color: #fff;
+    font-size: 24px;
 }
-.header-logo,
+
+.header-logo {
+    font-weight: bold;
+}
+
 .header-links a {
+    color: #fff;
     text-decoration: none;
-    font-family: American Typewriter, serif;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
+
+.header-links a:hover {
+    color: #ffca3a;
+}
+
 .main-title {
     text-align: center;
-    padding: 300px 20px;
-    padding-top: 1px;
-    background-color: hsl(0, 5%, 81%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 20px;
+    background-color: #6B7B8D;
+    color: white;
 }
+
 .subtext {
-    font-size: 18px;
-    font-family: Franklin Gothic Medium;
-    margin-top: -10px;
+    font-size: 20px;
+    margin: 10px 0;
 }
-.placeholder-image {
-    background-color: #ddd;
-    height: 500px;
-    text-align: center;
-    line-height: 200px;
-    display: flex;
-    border: 6px solid #000000;
-    margin-bottom: -250px;
+
+.profile-image {
+    border-radius: 10px;
+    margin-top: 20px;
 }
+
 .info-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 50px 20px;
+    background-color: #eef0f1;
 }
+
 .info-box {
-    border: 2px solid #ddd;
+    background: #fff;
+    border: 1px solid #ddd;
     padding: 20px;
-    flex-basis: calc(33% - 40px);
+    margin: 10px;
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
+.button-large {
+    padding: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-large:hover {
+    background-color: #ff4757;
+}
+
 .quote {
-    background-color: #f0f0f0;
-    padding: 50px 20px;
+    padding: 50px;
+    background-color: #f8f9fa;
     text-align: center;
     font-style: italic;
 }
+
 .call-to-action {
-    background-color: #0044cc;
+    background-color: #556cd6;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
-.call-to-action a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    background-color: #0066ff;
-    border-radius: 5px;
-}
 
-.button {
-    align-items: center;
-    appearance: none;
-    background-color: #FCFCFD;
-    border-radius: 4px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #36395A;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono",monospace;
-    height: 48px;
-    justify-content: space-between;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: left;
+.button-action {
+    padding: 15px 30px;
+    background-color: #ffca3a;
+    color: #333;
+    border-radius: 5px;
     text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
     font-size: 18px;
 }
-.button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-.button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-.button:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-}
 
-#foodwebsite {
-    padding-left: 200px;
-    padding-right: 200px;
-    height: 100px;
-    background-color: rgb(247, 87, 87);
-}
-
-#retro-chat-button {
-    padding-left: 200px;
-    padding-right: 200px;
-    height: 100px;
-    background-color: #feffab;
-}
-
-.quote {
-    padding: 18px;
-    margin-top: 10px;
+.button-action:hover {
+    background-color: #fbbd08;
 }
