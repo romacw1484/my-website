@@ -24,12 +24,12 @@ body {
 }
 
 .header-links a {
-    color: #fff; /* White text for navigation */
     text-decoration: none;
     margin-left: 15px;
     font-size: 18px;
     font-weight: 500; /* Slightly bold for better readability */
     transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 .header-links a:hover {
@@ -126,7 +126,8 @@ body {
     width: 100%; /* Ensures the button fills the entire width */
     padding: 20px 0; /* Uniform padding */
     text-align: center;
-    color: white;
+    color: black;
+    text-decoration: none; /* Remove underline */
     border-radius: 5px;
     box-sizing: border-box;
     display: inline-block;
