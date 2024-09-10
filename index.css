@@ -1,3 +1,4 @@
+
 /* General styles for the entire page */
 body {
     font-family: 'Roboto', sans-serif; /* Professional and clean sans-serif font */
@@ -70,9 +71,9 @@ body {
 
 .info-box {
     background: #333; /* Dark background for boxes */
-    border: 1px solid #444; /* Subtle border for the boxes */
+    border: 4px solid #000000; /* Subtle border for the boxes */
     padding: 0px;
-    margin: 10px;
+    
     height: 200px; /* Ensure height is uniform */
     flex-basis: calc(33.33% - 20px); /* Ensures equal width for all boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -125,15 +126,30 @@ body {
 #foodwebsite, #retro-chat-button, #photo-button {
     width: 100%; /* Full width of the container */
     height: 100%; /* Full height of the container */
-    padding: 20px 0; /* Uniform padding */
+    display: flex; 
+    padding: 80px 0; /* Uniform padding */
     text-align: center;
-    color: white; /* Set text color to white for readability */
+    color: black; /* Set text color to white for readability */
     text-decoration: none; /* Remove underline */
     border-radius: 5px;
     box-sizing: border-box;
     display: inline-block;
     font-size: 22px; /* Increased font size for emphasis */
-    font-weight: 600; /* Bold font for more impact */
+    font-weight: bold; /* Bold font for more impact */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    background-color: inherit; /* Inherit individual button colors */
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;     /* Smooth transition for effects */
+}
+
+/* Add the hover and focus effect similar to the top navigation buttons */
+#foodwebsite:hover, #retro-chat-button:hover, #photo-button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#foodwebsite:focus, #retro-chat-button:focus, #photo-button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 /* Specific button styles */
