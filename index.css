@@ -122,7 +122,7 @@ body {
 }
 
 /* Keeping unique button styles for different sections */
-#foodwebsite, #retro-chat-button {
+#foodwebsite, #retro-chat-button, #photo-button {
     width: 100%; /* Ensures the button fills the entire width */
     padding: 20px 0; /* Uniform padding */
     text-align: center;
@@ -141,6 +141,9 @@ body {
 
 #retro-chat-button {
     background-color: #feffab; /* Yellow button for Retro Chat App */
+}
+#photo-button {
+    background-color: #355E3B; /* Green button for photography site */
 }
 
 .quote {
