@@ -71,15 +71,15 @@ body {
 .info-box {
     background: #333; /* Dark background for boxes */
     border: 1px solid #444; /* Subtle border for the boxes */
-    padding: 20px;
+    padding: 0px;
     margin: 10px;
-    flex-basis: 30%;
+    height: 200px; /* Ensure height is uniform */
+    flex-basis: calc(33.33% - 20px); /* Ensures equal width for all boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #eaeaea; /* Light text color */
     font-family: 'Roboto', sans-serif; /* Ensuring consistency in fonts */
 }
-
 /* Button styles */
 .button {
     align-items: center;
@@ -123,10 +123,11 @@ body {
 
 /* Keeping unique button styles for different sections */
 #foodwebsite, #retro-chat-button, #photo-button {
-    width: 100%; /* Ensures the button fills the entire width */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
     padding: 20px 0; /* Uniform padding */
     text-align: center;
-    color: black;
+    color: white; /* Set text color to white for readability */
     text-decoration: none; /* Remove underline */
     border-radius: 5px;
     box-sizing: border-box;
@@ -135,6 +136,7 @@ body {
     font-weight: 600; /* Bold font for more impact */
 }
 
+/* Specific button styles */
 #foodwebsite {
     background-color: rgb(247, 87, 87); /* Red button for Food Webpage */
 }
@@ -142,8 +144,9 @@ body {
 #retro-chat-button {
     background-color: #feffab; /* Yellow button for Retro Chat App */
 }
+
 #photo-button {
-    background-color: #355E3B; /* Green button for photography site */
+    background-color: #355E3B; /* Green button for photography */
 }
 
 .quote {
