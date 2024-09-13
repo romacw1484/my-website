@@ -38,7 +38,7 @@ body {
 
 /* Photo Gallery */
 .photo-gallery {
-    padding: 20px; /* Reduce padding around the gallery */
+    padding: 20px;
     background-color: #1f1f1f;
     text-align: center;
 }
@@ -46,27 +46,30 @@ body {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Min width of 50px */
-    gap: 10px; /* Smaller gap between images */
+    gap: 10px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .gallery-item {
-    max-width: 100px; /* Set a maximum width for each gallery item */
-    margin: 0 auto; /* Center the items */
+    max-width: 200px; /* Set a maximum width for each image */
+    max-height: 150px; /* Set a maximum height for each image */
+    overflow: hidden; /* Ensure images don't overflow out of the container */
 }
 
 .gallery-item img {
-    width: 100%; /* Image takes up the full width of the container */
+    width: 100%; /* Make sure the image fits within the gallery item */
     height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop to fit the box if necessary */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Smaller shadow for smaller images */
-    border: 2px solid #ffca3a; /* Accent border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffca3a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Smaller hover shadow */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Quote Section */
