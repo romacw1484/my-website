@@ -45,7 +45,7 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller minimum width */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Smaller minimum width */
     gap: 15px; /* Slightly smaller gap between images */
     margin-top: 30px;
 }
