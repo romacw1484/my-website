@@ -45,32 +45,31 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 100px)); /* Set min and max width for grid items */
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px)); /* 100px to 150px size range */
+    gap: 15px; /* More space between images */
     margin-top: 20px;
     justify-content: center;
 }
 
 .gallery-item {
-    max-width: 100px; /* Set a smaller maximum width for each image */
-    max-height: 100px; /* Set a smaller maximum height for each image */
-    overflow: hidden; /* Ensure images don't overflow out of the container */
-    margin: 0 auto; /* Center each image */
+    width: 150px; /* Uniform width */
+    height: 150px; /* Uniform height */
+    border: 3px solid white; /* 3px white border to mimic Photos app look */
+    border-radius: 8px; /* Subtle border radius */
+    overflow: hidden;
 }
 
 .gallery-item img {
-    width: 100%; /* Make sure the image fits within the gallery item */
-    height: 100%; /* Ensure images do not expand beyond container */
-    object-fit: cover; /* Crop to fit the box if necessary */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid #ffca3a;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire box */
+    border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow for depth */
 }
 
 /* Quote Section */
@@ -88,4 +87,28 @@ body {
 }
 
 .quote footer {
-    margin-top: 15px
+    margin-top: 15px;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    padding: 30px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+}
+
+.button-action {
+    padding: 15px 30px;
+    background-color: #ffca3a;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button-action:hover {
+    background-color: #fbbd08;
+}
