@@ -45,21 +45,22 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Min width of 50px */
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px)); /* Set min and max width for grid items */
     gap: 10px;
     margin-top: 20px;
     justify-content: center;
 }
 
 .gallery-item {
-    max-width: 200px; /* Set a maximum width for each image */
-    max-height: 150px; /* Set a maximum height for each image */
+    max-width: 100px; /* Set a smaller maximum width for each image */
+    max-height: 100px; /* Set a smaller maximum height for each image */
     overflow: hidden; /* Ensure images don't overflow out of the container */
+    margin: 0 auto; /* Center each image */
 }
 
 .gallery-item img {
     width: 100%; /* Make sure the image fits within the gallery item */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Ensure images do not expand beyond container */
     object-fit: cover; /* Crop to fit the box if necessary */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
