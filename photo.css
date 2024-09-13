@@ -38,32 +38,36 @@ body {
 
 /* Photo Gallery */
 .photo-gallery {
-    padding: 50px;
+    padding: 20px; /* Reduce padding around the gallery */
     background-color: #1f1f1f;
     text-align: center;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Smaller minimum width */
-    gap: 15px; /* Slightly smaller gap between images */
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Min width of 50px */
+    gap: 10px; /* Smaller gap between images */
+    margin-top: 20px;
+}
+
+.gallery-item {
+    max-width: 100px; /* Set a maximum width for each gallery item */
+    margin: 0 auto; /* Center the items */
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Smaller shadow for smaller images */
-    border: 3px solid #ffca3a; /* Accent border to match theme */
+    width: 100%; /* Image takes up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Smaller shadow for smaller images */
+    border: 2px solid #ffca3a; /* Accent border */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item img:hover {
     transform: scale(1.05); /* Subtle zoom on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* More intense shadow on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Smaller hover shadow */
 }
-
 
 /* Quote Section */
 .quote {
