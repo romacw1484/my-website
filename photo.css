@@ -1,3 +1,4 @@
+
 /* Body and General Dark Mode */
 body {
     font-family: 'Poppins', sans-serif;
@@ -43,20 +44,20 @@ body {
     text-align: center;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 150px)); /* 100px to 150px size range */
-    gap: 15px; /* More space between images */
-    margin-top: 20px;
-    justify-content: center;
+.gallery-item {
+    width: 300px; /* Increase the width */
+    height: 300px; /* Increase the height */
+    border: 3px solid white; 
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.gallery-item {
-    width: 150px; /* Uniform width */
-    height: 150px; /* Uniform height */
-    border: 3px solid white; /* 3px white border to mimic Photos app look */
-    border-radius: 8px; /* Subtle border radius */
-    overflow: hidden;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px)); /* Adjust minmax to match larger images */
+    gap: 20px; /* Adjust the space between images for larger size */
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .gallery-item img {
