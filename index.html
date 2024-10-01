@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,41 +10,44 @@
 <body>
 
     <header class="header">
-    <div class="header-logo">Welcome to my website!</div>
-    <nav class="header-links">
-        <a href="projects.html" class="button">Projects</a>
-        <a href="#" class="button">Link 2</a>
-        <a href="https://www.linkedin.com/in/william-romac-95378224a/" class="button">Linkedin</a>
-    </nav>
+        <div class="header-logo">Welcome to my site...</div>
+        <nav class="header-links">
+            <a href="projects.html" class="button">Projects</a>
+            <a href="https://github.com/romacw1484" class="button">GitHub</a> 
+            <a href="https://www.linkedin.com/in/william-romac-95378224a/" class="button">LinkedIn</a>
+        </nav>
     </header>
 
-    <div class="main-title">
-        <h1>Hello my name is William Romac...</h1>
-        <p class="subtext">I am currently a Sophomore at Fordham University studying Computer Science. I started out my Fordham career by taking Computer Science II, learning the fundamentals of C++ and Visual Studio Code. In the spring of 2023, I took a comprehensive Data Structures course, were we used C++ to develop various graphing and computational functions, Stacks and Queues to help optimize storage, and different retrieval and sorting routines. Following this course, I pursued the Odin Projects Web Development course which allowed me to express my creativity in forms of HTML and CSS. Moving into this school year, I took Database Systems this fall where we learned SQL on MariaDB, developing different models and databases to resemble real world scenarios. I then began working with <i>Oracle Apex</i>, where I am currently working on a reservation system for Big Sqwaw Ski Mountain tying in my SQL knowledge. Leading up to where we are now, I am currently taking Computer Algorithms and Computer Organization and I am very excited!</p>
-        <div class="placeholder-image"><img src="Screenshot 2024-01-31 at 9.31.29 AM.png" width="400px" height="500px" alt="William"></div>
-    </div>
+    <section class="main-title">
+        <h1>Hi, I'm William Romac</h1>
+        <p class="subtext">Junior at Fordham University studying Computer Science...</p>
+        <div class="image-wrapper">
+            <img src="Screenshot 2024-01-31 at 9.31.29 AM.png" width="300px" alt="William" class="profile-image">
+        </div>
+    </section>
     
-    <div class="info-section">
-    <div class="info-box">
-        <a href="foodhome.html" class="button" id="bigger">Food Webpage</a>
-    </div>
-    <div class="info-box">
-        <p>this is some subtext under an illustration or image</p>
-    </div>
-    <div class="info-box">
-        <p>this is some subtext under an illustration or image</p>
-    </div>
-    </div>
+    <section class="info-section">
+        <div class="info-box">
+            <a href="foodhome.html" class="button-large" id="foodwebsite">Food Webpage</a>
+        </div>
+        <div class="info-box">
+            <a href="https://retro-chat-app-cb79717625e8.herokuapp.com/login" class="button-large" id="retro-chat-button">Retro-Chat-App</a>
+        </div>
+        <div class="info-box">
+            <a href="photo.html" class="button-large" id="photo-button">Photography</a>
+        </div>
+    </section>
 
-    <div class="quote">
-    <p><i>"The only way to discover the limits of the possible is to go beyond them into the impossible."</i></p>
-    <footer>-Arthur C. Clarke</footer>
-    </div>
+    <section class="quote">
+        <p><i>"The only way to discover the limits of the possible is to go beyond them into the impossible."</i></p>
+        <footer>- Arthur C. Clarke</footer>
+    </section>
 
-    <div class="call-to-action">
-    <p>Call to action! It's time!</p>
-    <a href="#">Sign up</a>
-    </div>
+    <section class="call-to-action">
+        <p>dont press me!</p>
+        <button id="fireButton" class="button-action">...</button>
+    </section>
 
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -1,127 +1,196 @@
+
+/* General styles for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Professional and clean sans-serif font */
     margin: 0;
     padding: 0;
-    color: #070606;
-  }
-  .header {
+    color: #eaeaea; /* Light text color for contrast */
+    background-color: #121212; /* Dark background */
+    line-height: 1.6;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #37619c;
-    color: rgb(255, 255, 255);
-    font-size: xx-large;
-  }
-  .header-logo,
-  .header-links a {
-    text-decoration: none;
-    font-family: American Typewriter, serif;
-  }
-  .main-title {
-    text-align: center;
-    padding: 300px 20px;
-    padding-top: 1px;
-    background-color: hsl(0, 5%, 81%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-  }
-  .subtext {
+    padding: 20px;
+    background-color: #1f1f1f; /* Darker header */
+    color: #fff; /* White text for the header */
+    font-size: 24px;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 28px; /* Slightly larger for emphasis */
+}
+
+.header-links a {
+    text-decoration: none;
+    margin-left: 15px;
     font-size: 18px;
-    font-family: Franklin Gothic Medium;
-    margin-top: -10px;
-  }
-  .placeholder-image {
-    background-color: #ddd;
-    height: 500px;
+    font-weight: 500; /* Slightly bold for better readability */
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.header-links a:hover {
+    color: #ffca3a; /* Highlight hover effect */
+}
+
+.main-title {
     text-align: center;
-    line-height: 200px;
-    display: flex;
-    border: 6px solid #000000;
-    margin-bottom: -250px;
-  }
-  .info-section {
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Darker section background */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title h1 {
+    font-size: 36px; /* Larger heading */
+    font-weight: 700; /* Bold heading */
+}
+
+.subtext {
+    font-size: 20px;
+    font-weight: 300; /* Light font for subtext */
+    margin: 10px 0;
+}
+
+.profile-image {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.info-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 50px 20px;
-  }
-  .info-box {
-    border: 2px solid #ddd;
-    padding: 20px;
-    flex-basis: calc(33% - 40px);
-    text-align: center;
-  }
-  .quote {
-    background-color: #f0f0f0;
-    padding: 50px 20px;
-    text-align: center;
-    font-style: italic;
-  }
-  .call-to-action {
-    background-color: #0044cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  .call-to-action a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    background-color: #0066ff;
-    border-radius: 5px;
-  }
+    background-color: #2a2a2a; /* Dark gray for info section */
+}
 
-
+.info-box {
+    background: #333; /* Dark background for boxes */
+    border: 4px solid #000000; /* Subtle border for the boxes */
+    padding: 0px;
+    
+    height: 200px; /* Ensure height is uniform */
+    flex-basis: calc(33.33% - 20px); /* Ensures equal width for all boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #eaeaea; /* Light text color */
+    font-family: 'Roboto', sans-serif; /* Ensuring consistency in fonts */
+}
+/* Button styles */
 .button {
     align-items: center;
     appearance: none;
     background-color: #FCFCFD;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
     color: #36395A;
     cursor: pointer;
     display: inline-flex;
-    font-family: "JetBrains Mono",monospace;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; /* Slightly bold for button text */
+    font-size: 20px; /* Larger button text */
     height: 48px;
     justify-content: space-between;
     line-height: 1;
-    list-style: none;
-    overflow: hidden;
     padding-left: 16px;
     padding-right: 16px;
-    position: relative;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
+    transition: box-shadow .15s, transform .15s;
     user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
     white-space: nowrap;
-    will-change: box-shadow,transform;
-    font-size: 18px;
 }
+
 .button:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
+
 .button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
+
 .button:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
-  }
+}
 
-  #bigger {
-    padding-left: 200px;
-    padding-right: 200px;
-    height: 100px;
-    background-color:  rgb(247, 87, 87);
-  }
+/* Keeping unique button styles for different sections */
+#foodwebsite, #retro-chat-button, #photo-button {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    display: flex; 
+    padding: 80px 0; /* Uniform padding */
+    text-align: center;
+    color: black; /* Set text color to white for readability */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 22px; /* Increased font size for emphasis */
+    font-weight: bold; /* Bold font for more impact */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    background-color: inherit; /* Inherit individual button colors */
+    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;     /* Smooth transition for effects */
+}
 
-  .quote {
-    padding: 18px;
-    margin-top: 10px
-  }
+/* Add the hover and focus effect similar to the top navigation buttons */
+#foodwebsite:hover, #retro-chat-button:hover, #photo-button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#foodwebsite:focus, #retro-chat-button:focus, #photo-button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+/* Specific button styles */
+#foodwebsite {
+    background-color: rgb(247, 87, 87); /* Red button for Food Webpage */
+}
+
+#retro-chat-button {
+    background-color: #feffab; /* Yellow button for Retro Chat App */
+}
+
+#photo-button {
+    background-color: #355E3B; /* Green button for photography */
+}
+
+.quote {
+    padding: 50px;
+    background-color: #2a2a2a;
+    text-align: center;
+    font-style: italic;
+    color: #eaeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+.call-to-action {
+    background-color: #444; /* Darker background for call-to-action */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.button-action {
+    padding: 15px 30px;
+    background-color: #ffca3a;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600; /* Bold font for buttons */
+}
+
+.button-action:hover {
+    background-color: #fbbd08;
+}
